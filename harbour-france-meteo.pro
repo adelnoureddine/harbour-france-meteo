@@ -17,13 +17,12 @@ CONFIG += sailfishapp
 SOURCES += src/harbour-france-meteo.cpp
 
 DISTFILES += qml/harbour-france-meteo.qml \
-    qml/pages/FirstPage.qml \
+    qml/pages/MainPage.qml \
     rpm/harbour-france-meteo.changes.in \
     rpm/harbour-france-meteo.changes.run.in \
     rpm/harbour-france-meteo.spec \
     rpm/harbour-france-meteo.yaml \
     src/MeteoClient.js \
-    translations/*.ts \
     harbour-france-meteo.desktop
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 172x172

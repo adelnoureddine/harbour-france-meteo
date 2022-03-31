@@ -12,7 +12,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Sun Apr 13 2014 Jack Tar <jack.tar@example.com> 0.0.1-1
-- Scrubbed the deck
-- Hoisted the sails
+* Thu May 13 2021 Adel Noureddine 1.0.0-1
+- Initial release
 
+* Thu Mar 31 2022 Adel Noureddine 1.1.0-1
+- Support SailJail
+- Update about page

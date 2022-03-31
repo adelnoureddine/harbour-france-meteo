@@ -5,6 +5,6 @@ import "pages"
 ApplicationWindow
 {
     id: mainWindow
-    initialPage: Component { FirstPage { } }
+    initialPage: Component { MainPage { } }
     allowedOrientations: defaultAllowedOrientations
 }

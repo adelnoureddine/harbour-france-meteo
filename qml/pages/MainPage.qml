@@ -18,7 +18,7 @@ Page {
             PullDownMenu{
 
                 MenuItem {
-                    text: "A propos"
+                    text: "À Propos"
                     onClicked: pageStack.animatorPush(propos, {}, PageStackAction.Animated)
                 }
             }
@@ -2323,9 +2323,7 @@ Page {
 
                         Label {
                             width: parent.width
-                            text: "Voici un prototype d'application donnant les informations météorologiques basiques avec l'API de Météo-France. Vous retrouverez ici " +
-                                  "les informations d'aujourd'hui, de demain mais aussi sur les 15 prochains jours. De plus, un mode géolocalisation " +
-                                  "est également mis à votre disposition (ce mode est initialement activé au lancement de l'application)"
+                            text: "Application de météo se basant sur l'API de Météo-France"
                             horizontalAlignment: Text.AlignHCenter
                             wrapMode: Text.Wrap
                             font.pixelSize: Theme.fontSizeSmall
@@ -2338,7 +2336,7 @@ Page {
                         spacing: Theme.paddingLarge
 
                         SectionHeader {
-                            text: qsTr("Auteurs")
+                            text: qsTr("Mainteneur")
                         }
 
                         Column {
@@ -2346,21 +2344,43 @@ Page {
                             width: parent.width
 
                             Label {
-                                text: "Aziz Tchakounte"
+                                text: "Adel Noureddine © 2021-2022"
+                                anchors {
+                                    horizontalCenter: parent.horizontalCenter
+                                }
+                            }
+                        }
+                    }
+
+                    Column{
+
+                        width: parent.width
+                        spacing: Theme.paddingLarge
+
+                        SectionHeader {
+                            text: qsTr("Auteurs initiaux")
+                        }
+
+                        Column {
+
+                            width: parent.width
+
+                            Label {
+                                text: "Aziz Tchakounte © 2021"
                                 anchors {
                                     horizontalCenter: parent.horizontalCenter
                                 }
                             }
 
                             Label {
-                                text: "Manka"
+                                text: "Manka © 2021"
                                 anchors {
                                     horizontalCenter: parent.horizontalCenter
                                 }
                             }
 
                             Label {
-                                text: "Jaeemiel Rey"
+                                text: "Jaeemiel Rey © 2021"
                                 anchors {
                                     horizontalCenter: parent.horizontalCenter
                                 }
@@ -2384,8 +2404,15 @@ Page {
                             }
                         }
 
+                        Icon {
+                             source: "image://theme/icon-s-cloud-download"
+                             anchors {
+                                 horizontalCenter: parent.horizontalCenter
+                             }
+                         }
+
                         Text {
-                            text: "<a href=\"https://gitlab.com/adelnoureddine/harbour-france-meteo\">" + qsTr("View source code on GitLab") + "</a>"
+                            text: "<a href=\"https://gitlab.com/adelnoureddine/harbour-france-meteo\">" + qsTr("Voir le code source sur GitLab") + "</a>"
                             anchors {
                                 horizontalCenter: parent.horizontalCenter
                             }
